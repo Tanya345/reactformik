@@ -23,7 +23,7 @@ const OtherDetails = () => {
 					</select>
 				</div>
 				<div className="mb-3 d-flex flex-column w-30 mx-2">
-					<label htmlFor="marital" className="form-label align-self-start">Sex</label>
+					<label htmlFor="marital" className="form-label align-self-start">Marital Status</label>
 					<select className="form-select" id="marital" value={values.marital} onChange={handleChange}>
 						<option>Enter Marital Status</option>
 						<option value="1">Married</option>
@@ -31,7 +31,7 @@ const OtherDetails = () => {
 					</select>
 				</div>
 				<div className="mb-3 d-flex flex-column w-20 mx-2">
-					<label htmlFor="bloodGroup" className="form-label align-self-start">Sex</label>
+					<label htmlFor="bloodGroup" className="form-label align-self-start">Blood Group</label>
 					<select className="form-select" id="bloodGroup" value={values.bloodGroup} onChange={handleChange}>
 						<option>Group</option>
 						<option value="1">A+</option>
@@ -41,7 +41,7 @@ const OtherDetails = () => {
 					</select>
 				</div>
 				<div className="mb-3 d-flex flex-column w-20 mx-2">
-					<label htmlFor="nationality" className="form-label align-self-start">Sex</label>
+					<label htmlFor="nationality" className="form-label align-self-start">Nationality</label>
 					<input type="text" className="form-control mt-2" id="nationality" name="nationality" placeholder="Enter nationality" value={values.nationality} onChange={handleChange}/>
 				</div>
 			</div>
