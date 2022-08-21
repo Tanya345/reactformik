@@ -14,7 +14,7 @@ const AddressDetails = () => {
 				</div>
 				<div className="mb-3 d-flex flex-column w-30 mx-2">
 					<label htmlFor="state" className="form-label align-self-start">State</label>
-					<select className="form-select" id="guardian" value={values.state} onChange={handleChange}>
+					<select className="form-select" id="state" value={values.state} onChange={handleChange}>
 						<option>Enter State</option>
 						<option value="1">Up</option>
 						<option value="2">Haryana</option>
