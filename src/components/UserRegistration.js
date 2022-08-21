@@ -36,8 +36,9 @@ const UserRegistration = () => {
 	const { values, errors, handleChange, handleSubmit, touched } = useFormik({
 		initialValues,
 		validationSchema: registrationSchema,
-		onSubmit: (values) => {
+		onSubmit: (values,action) => {
 			setUsers(prevState =>[...prevState,{name: values.name, dob: values.dob, sex: values.sex }])
+			action.resetForm();
 		}
 	})
 

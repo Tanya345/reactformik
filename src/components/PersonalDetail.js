@@ -18,7 +18,7 @@ const PersonalDetail = () => {
 				</div>
 				<div className="mb-3 d-flex flex-column w-30 mx-2">
 					<label htmlFor="dob" className="form-label align-self-start">Date of Birth or Age<sup className="text-danger">*</sup></label>
-					<input type="number" required className="form-control" id="dob" name="dob" placeholder="DD/MM/YYYY or Age in Years" value={values.dob} onChange={handleChange} />
+					<input type="text" required className="form-control" id="dob" name="dob" placeholder="DD/MM/YYYY or Age in Years" value={values.dob} onChange={handleChange} />
 					{errors.dob && touched.dob && <strong className="text-danger align-self-start">{errors.dob}</strong>}
 				</div>
 				<div className="mb-3 d-flex flex-column w-30 mx-2">
